@@ -1,4 +1,4 @@
-const Page = () => {
+const CompanionSession = () => {
     return (
         <div>
             Companion Session
@@ -6,4 +6,4 @@ const Page = () => {
     );
 };
 
-export default Page;
+export default CompanionSession;
