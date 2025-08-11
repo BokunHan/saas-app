@@ -12,6 +12,7 @@ import {
 } from "@/lib/actions/companion.actions";
 import Image from "next/image";
 import CompanionsList from "@/components/CompanionsList";
+import SessionsList from "@/components/SessionsList";
 
 const Profile = async () => {
   const user = await currentUser();
@@ -67,9 +68,9 @@ const Profile = async () => {
             Recent Sessions
           </AccordionTrigger>
           <AccordionContent>
-            <CompanionsList
+            <SessionsList
               title="Recent Sessions"
-              companions={sessionHistory}
+              sessionData={sessionHistory}
             />
           </AccordionContent>
         </AccordionItem>
