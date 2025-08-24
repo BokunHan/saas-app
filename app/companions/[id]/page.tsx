@@ -20,17 +20,17 @@ const CompanionSession = async ({ params }: CompanionSessionPageProps) => {
 
   return (
     <main>
-      <article className="flex rounded-border justify-between p-6 max-md:flex-col">
-        <div className="flex items-center gap-2">
+      <article className="flex rounded-border justify-between px-6 py-4 max-md:flex-col">
+        <div className="flex items-center gap-4">
           <div
-            className="size-[72px] flex items-center justify-center rounded-lg max-md:hidden"
+            className="size-[65px] flex items-center justify-center rounded-lg max-md:hidden"
             style={{ backgroundColor: getSubjectColor(subject) }}
           >
             <Image
               src={`/icons/${subject}.svg`}
               alt={subject}
-              width={35}
-              height={35}
+              width={32}
+              height={32}
             />
           </div>
 
@@ -39,7 +39,7 @@ const CompanionSession = async ({ params }: CompanionSessionPageProps) => {
               <p className="font-bold text-2xl">{name}</p>
               <div className="subject-badge max-sm:hidden">{subject}</div>
             </div>
-            <p className="text-lg">{topic}</p>
+            <p className="text-lg line-clamp-1">{topic}</p>
           </div>
         </div>
         <div className="items-start text-2xl max-md:hidden">

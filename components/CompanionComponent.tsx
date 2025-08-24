@@ -128,8 +128,8 @@ const CompanionComponent = ({
               <Image
                 src={`/icons/${subject}.svg`}
                 alt={subject}
-                width={150}
-                height={150}
+                width={120}
+                height={120}
                 className="max-sm:w-fit"
               />
             </div>
@@ -156,8 +156,8 @@ const CompanionComponent = ({
             <Image
               src={userImage}
               alt={userName}
-              width={130}
-              height={130}
+              width={100}
+              height={100}
               className="rounded-lg"
             />
             <p className="font-bold text-2xl">{userName}</p>
@@ -202,7 +202,7 @@ const CompanionComponent = ({
             if (message.role === "assistant") {
               return (
                 <p key={index} className="max-sm:text-sm">
-                  {name.split(" ")[0].replace("/[.,]/g, ", "")}:
+                  {name.split(" ")[0].replace("/[.,]/g, ", "")}:{" "}
                   {message.content}
                 </p>
               );
